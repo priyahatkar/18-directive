@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'directive';
+  
+  
+  onKeyUp(eve : Event){
+    console.log((eve.target as HTMLInputElement).value)
+  }
 }
